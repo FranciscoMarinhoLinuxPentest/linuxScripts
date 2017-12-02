@@ -23,5 +23,6 @@ touch screen.sh
 echo "#!/bin/bash">>screen.sh
 echo "xwinwrap -ni  -fs -s -st -sp -b -nf -- mplayer -nosound -loop 0  -wid WID $video ">>screen.sh
 mv screen.sh /bin
+chmod 777 /bin/screen.sh
 echo "Criado arquivo de configuração"
 echo "Inicie o programa digitando screen.sh no seu terminal"
